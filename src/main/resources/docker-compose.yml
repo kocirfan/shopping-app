@@ -12,7 +12,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: irfan1234
 
   elasticsearch:
-    image: elasticsearch:8.1.3
+    image: elasticsearch:7.9.2
     ports:
       - 9200:9200
       - 9300:9300
