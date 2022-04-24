@@ -1,6 +1,7 @@
-package com.kocirfan.product.model;
+package com.kocirfan.product.model.product;
 
 import com.kocirfan.product.domain.MoneyTypes;
+import com.kocirfan.product.model.ProductSellerResponse;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
@@ -22,9 +23,10 @@ public class ProductResponse {
     private ProductSellerResponse seller;
     private String features;
     private int available;
+    private boolean freeDelivery;
     private String deliveryIn;
     private BigDecimal price;
+    private String moneySymbol;
     private String categoryId;
-    private Boolean freeDelivery;
-    private MoneyTypes moneyType;
+
 }

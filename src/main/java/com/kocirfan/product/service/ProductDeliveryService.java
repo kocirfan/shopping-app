@@ -1,5 +1,6 @@
 package com.kocirfan.product.service;
 
+import com.kocirfan.product.domain.MoneyTypes;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,13 +10,13 @@ import java.math.BigDecimal;
 @RequiredArgsConstructor
 public class ProductDeliveryService {
 
-    public String getDeliveryInfo(String productId){
-       // TODO
+    public String getDeliveryInfo(String productId) {
+        // TODO
         return "Tomorrow";
     }
 
-    public boolean freeDeliveryCheck(String productId, BigDecimal price){
-       // TODO
-        return price.compareTo(BigDecimal.ONE) >= 0;
+    public boolean freeDeliveryCheck(String productId, BigDecimal price, MoneyTypes moneyTypes) {
+        // TODO
+        return true;
     }
 }

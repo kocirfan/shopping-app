@@ -1,10 +1,11 @@
-package com.kocirfan.product.model;
+package com.kocirfan.product.model.product;
 
 import com.kocirfan.product.domain.MoneyTypes;
 import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -16,8 +17,7 @@ public class ProductSaveRequest {
     private String description;
     private String features;
     private BigDecimal available;
-    private BigDecimal price;
-    private MoneyTypes money;
+    private HashMap<MoneyTypes, BigDecimal> price;
     private List<String> images;
     private String sellerId;
     private String categoryId;

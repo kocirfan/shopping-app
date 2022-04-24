@@ -4,7 +4,7 @@ public enum MoneyTypes {
 
         USD("Dolar", "$"),
         EUR("Euro", "E"),
-        TL("Turk Lirası", "T");
+        TL("Turk Lirası", "TRY");
 
         private String label; // dolar
         private String symbol; //$
@@ -13,6 +13,10 @@ public enum MoneyTypes {
             this.label = label;
             this.symbol = symbol;
         }
+
+    public String getSymbol() {
+        return symbol;
+    }
 }
 
 
